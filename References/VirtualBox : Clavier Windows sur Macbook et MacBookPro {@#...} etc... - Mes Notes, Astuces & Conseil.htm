@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7 no-js" lang="fr-FR">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 no-js" lang="fr-FR">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html class="no-js" lang="fr-FR">
+<!--<![endif]-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+        		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="profile"  href="https://gmpg.org/xfn/11" />
+		<link rel="pingback" href="https://www.dsconsultant.net/blog/xmlrpc.php" />
+		<!-- html5shiv for IE8 and less  -->
+		<!--[if lt IE 9]>
+			<script src="https://www.dsconsultant.net/blog/wp-content/themes/customizr/assets/front/js/libs/html5.js"></script>
+		<![endif]-->
+		<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>VirtualBox : Clavier Windows sur Macbook et MacBookPro {@#...} etc... - Mes Notes, Astuces &amp; Conseils informatiques</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v13.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://www.dsconsultant.net/blog/apple/virtualbox-clavier-windows-sur-macbook-et-macbookpro-etc" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="VirtualBox : Clavier Windows sur Macbook et MacBookPro {@#...} etc... - Mes Notes, Astuces &amp; Conseils informatiques" />
+<meta property="og:description" content="http://wikis.sun.com/display/MacSunFrance/VirtualBox#VirtualBox-ParamétrageClavierMacbookpourWindows Cette manipulation va permettre de remplacer le mappage clavier sous VirtualBox pour pouvoir taper les caractères @#} etc&#8230; Si un Clavier (FR) a déjà été rajouté, il est préférable de le supprimer avant de lancer l&rsquo;exécutable LayoutVE_i386.msi téléchargeable ici : Clavier_Apple-Macbook-VE-i386.zip qui va rajouter un nouveau clavier Français. Note : Cet exécutable permet également &hellip;" />
+<meta property="og:url" content="https://www.dsconsultant.net/blog/apple/virtualbox-clavier-windows-sur-macbook-et-macbookpro-etc" />
+<meta property="og:site_name" content="Mes Notes, Astuces &amp; Conseils informatiques" />
+<meta property="article:publisher" content="https://www.facebook.com/dsconsultant.net/" />
+<meta property="article:section" content="Apple Macintosh, MacOSX..." />
+<meta property="article:published_time" content="2010-05-10T14:50:49+00:00" />
+<meta property="article:modified_time" content="2013-12-09T12:31:54+00:00" />
+<meta property="og:updated_time" content="2013-12-09T12:31:54+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="http://wikis.sun.com/display/MacSunFrance/VirtualBox#VirtualBox-ParamétrageClavierMacbookpourWindows Cette manipulation va permettre de remplacer le mappage clavier sous VirtualBox pour pouvoir taper les caractères @#} etc&#8230; Si un Clavier (FR) a déjà été rajouté, il est préférable de le supprimer avant de lancer l&rsquo;exécutable LayoutVE_i386.msi téléchargeable ici : Clavier_Apple-Macbook-VE-i386.zip qui va rajouter un nouveau clavier Français. Note : Cet exécutable permet également [&hellip;]" />
+<meta name="twitter:title" content="VirtualBox : Clavier Windows sur Macbook et MacBookPro {@#...} etc... - Mes Notes, Astuces &amp; Conseils informatiques" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.dsconsultant.net/blog/#website","url":"https://www.dsconsultant.net/blog/","name":"Mes Notes, Astuces &amp; Conseils informatiques","inLanguage":"fr-FR","description":"Dominique Schos Consultant Conseil informatique Maroc","potentialAction":{"@type":"SearchAction","target":"https://www.dsconsultant.net/blog/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.dsconsultant.net/blog/apple/virtualbox-clavier-windows-sur-macbook-et-macbookpro-etc#webpage","url":"https://www.dsconsultant.net/blog/apple/virtualbox-clavier-windows-sur-macbook-et-macbookpro-etc","name":"VirtualBox : Clavier Windows sur Macbook et MacBookPro {@#...} etc... - Mes Notes, Astuces &amp; Conseils informatiques","isPartOf":{"@id":"https://www.dsconsultant.net/blog/#website"},"inLanguage":"fr-FR","datePublished":"2010-05-10T14:50:49+00:00","dateModified":"2013-12-09T12:31:54+00:00","author":{"@id":"https://www.dsconsultant.net/blog/#/schema/person/09f4f57c32b2145fdea40e17b1ea7e92"}},{"@type":["Person"],"@id":"https://www.dsconsultant.net/blog/#/schema/person/09f4f57c32b2145fdea40e17b1ea7e92","name":"Dominique Schos","image":{"@type":"ImageObject","@id":"https://www.dsconsultant.net/blog/#authorlogo","inLanguage":"fr-FR","url":"https://secure.gravatar.com/avatar/5df6b5e6cea471da661f13bc21e3e889?s=96&d=mm&r=g","caption":"Dominique Schos"},"description":"De MacOS 1.0 en 1984 \u00e0 OSX10.12 High Sierra, de MS-DOS 1 \u00e0 Windows10, de IOS Apple \u00e0 Android, des premiers \"Tchat\" \u00e0 Facebook Live, je ne me lasse pas de \"flirter\" avec ces technologies et moyens de communications que j'aime mettre \u00e0 votre service...","sameAs":[]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Mes Notes, Astuces &amp; Conseils informatiques &raquo; Flux" href="https://www.dsconsultant.net/blog/feed" />
+<link rel="alternate" type="application/rss+xml" title="Mes Notes, Astuces &amp; Conseils informatiques &raquo; Flux des commentaires" href="https://www.dsconsultant.net/blog/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Mes Notes, Astuces &amp; Conseils informatiques &raquo; VirtualBox : Clavier Windows sur Macbook et MacBookPro {@#&#8230;} etc&#8230; Flux des commentaires" href="https://www.dsconsultant.net/blog/apple/virtualbox-clavier-windows-sur-macbook-et-macbookpro-etc/feed" />
+<!-- This site uses the Google Analytics by ExactMetrics plugin v6.0.1 - Using Analytics tracking - https://www.exactmetrics.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var em_version         = '6.0.1';
+	var em_track_user      = true;
+	var em_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-3319522-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+
+	if ( 'undefined' === typeof gaOptout ) {
+		function gaOptout() {
+			__gaTrackerOptout();
+		}
+	}
+	
+	if ( em_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-3319522-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('require', 'displayfeatures');
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + em_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by ExactMetrics -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.dsconsultant.net\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.4"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='tc-gfonts-css'  href='//fonts.googleapis.com/css?family=Fjalla+One:400%7CCantarell:400' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.dsconsultant.net/blog/wp-includes/css/dist/block-library/style.min.css?ver=5.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='customizr-fa-css'  href='https://www.dsconsultant.net/blog/wp-content/themes/customizr/assets/shared/fonts/fa/css/fontawesome-all.min.css?ver=4.1.55' type='text/css' media='all' />
+<link rel='stylesheet' id='customizr-common-css'  href='https://www.dsconsultant.net/blog/wp-content/themes/customizr/inc/assets/css/tc_common.min.css?ver=4.1.55' type='text/css' media='all' />
+<link rel='stylesheet' id='customizr-skin-css'  href='https://www.dsconsultant.net/blog/wp-content/themes/customizr/inc/assets/css/grey.min.css?ver=4.1.55' type='text/css' media='all' />
+<style id='customizr-skin-inline-css' type='text/css'>
+
+                  .site-title,.site-description,h1,h2,h3,.tc-dropcap {
+                    font-family : 'Fjalla One';
+                    font-weight : 400;
+                  }
+
+                  body,.navbar .nav>li>a {
+                    font-family : 'Cantarell';
+                    font-weight : 400;
+                  }
+table { border-collapse: separate; }
+                           body table { border-collapse: collapse; }
+                          
+.social-links .social-icon:before { content: none } 
+.sticky-enabled .tc-shrink-on .site-logo img {
+    					height:30px!important;width:auto!important
+    				}
+
+    				.sticky-enabled .tc-shrink-on .brand .site-title {
+    					font-size:0.6em;opacity:0.8;line-height:1.2em
+    				}
+
+.tc-slider-loader-wrapper{ display:none }
+html.js .tc-slider-loader-wrapper { display: block }.no-csstransforms3d .tc-slider-loader-wrapper .tc-img-gif-loader {
+                                                background: url('https://www.dsconsultant.net/blog/wp-content/themes/customizr/assets/front/img/slider-loader.gif') no-repeat center center;
+                                         }.tc-slider-loader-wrapper .tc-css-loader > div { border-color:#5A5A5A; }
+#tc-push-footer { display: none; visibility: hidden; }
+         .tc-sticky-footer #tc-push-footer.sticky-footer-enabled { display: block; }
+        
+
+@media (max-width: 979px) {
+          .tc-second-menu-on .nav-collapse {
+            width: inherit;
+            overflow: visible;
+            height: inherit;
+            position:relative;
+            top: inherit;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            background: inherit;
+          }
+
+          .logo-centered.tc-second-menu-display-in-header-when-mobile .pull-menu-center .navbar .nav-collapse {
+              width: 100%;
+              text-align: center;
+          }
+
+          .logo-centered.tc-second-menu-display-in-header-when-mobile .pull-menu-center .navbar .nav-collapse .nav {
+              float: initial;
+              display: inline-block;
+              margin: 0 -12px;
+              text-align: initial;
+          }
+
+          .tc-sticky-header.sticky-enabled #tc-page-wrap .nav-collapse, #tc-page-wrap .tc-second-menu-hide-when-mobile .nav-collapse.collapse .nav {
+            display:none !important;
+          }
+
+          .tc-second-menu-on .tc-hover-menu.nav ul.dropdown-menu {
+            display:none;
+          }
+          .tc-second-menu-on .navbar .nav-collapse ul.nav>li li a {
+            padding: 3px 20px;
+          }
+          .tc-second-menu-on .nav-collapse.collapse .nav {
+            display: block;
+            float: left;
+            margin: inherit;
+          }
+          .tc-second-menu-on .nav-collapse .nav>li {
+            float:left;
+          }
+          .tc-second-menu-on .nav-collapse .dropdown-menu {
+            position:absolute;
+            display: none;
+            -webkit-box-shadow: 0 2px 8px rgba(0,0,0,.2);
+            -moz-box-shadow: 0 2px 8px rgba(0,0,0,.2);
+            box-shadow: 0 2px 8px rgba(0,0,0,.2);
+            background-color: #fff;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            -webkit-background-clip: padding-box;
+            -moz-background-clip: padding;
+            background-clip: padding-box;
+            padding: 5px 0;
+          }
+          .tc-second-menu-on .navbar .nav>li>.dropdown-menu:after, .navbar .nav>li>.dropdown-menu:before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+          }
+          .tc-second-menu-on .tc-hover-menu.nav .caret {
+            display:inline-block;
+          }
+          .tc-second-menu-on .tc-hover-menu.nav li:hover>ul {
+            display: block;
+          }
+          .tc-second-menu-on .nav a, .tc-second-menu-on .tc-hover-menu.nav a {
+            border-bottom: none;
+          }
+          .tc-second-menu-on .dropdown-menu>li>a {
+            padding: 3px 20px;
+          }
+          .tc-second-menu-on .tc-submenu-move .dropdown-menu>li>a:focus,.tc-second-menu-on .tc-submenu-move .dropdown-menu>li>a:hover,.tc-second-menu-on .tc-submenu-move .dropdown-submenu:focus>a, .tc-second-menu-on .tc-submenu-move .dropdown-submenu:hover>a {
+            padding-left: 1.63em
+          }
+          .tc-second-menu-on .tc-submenu-fade .nav>li>ul {
+            opacity: 0;
+            top: 75%;
+            visibility: hidden;
+            display: block;
+            -webkit-transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            -ms-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+          }
+          .tc-second-menu-on .tc-submenu-fade .nav li.open>ul, .tc-second-menu-on .tc-submenu-fade .tc-hover-menu.nav li:hover>ul {
+            opacity: 1;
+            top: 95%;
+            visibility: visible;
+          }
+          .tc-second-menu-on .tc-submenu-move .dropdown-menu>li>a {
+            -webkit-transition: all ease .241s;
+            -moz-transition: all ease .241s;
+            -o-transition: all ease .241s;
+            transition: all ease .241s;
+          }
+          .tc-second-menu-on .dropdown-submenu>.dropdown-menu {
+            top: 110%;
+            left: 30%;
+            left: 30%\9;
+            top: 0\9;
+            margin-top: -6px;
+            margin-left: -1px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+          }
+          .tc-second-menu-on .dropdown-submenu>a:after {
+            content: ' ';
+          }
+        }
+
+
+        .sticky-enabled .tc-second-menu-on .nav-collapse.collapse {
+          clear:none;
+        }
+
+
+          #tc-sn { width: 330px;}
+          .tc-sn-visible[class*=sn-left] #tc-page-wrap { left: 330px; }
+          .tc-sn-visible[class*=sn-right] #tc-page-wrap { right: 330px; }
+          [class*=sn-right].sn-close #tc-page-wrap, [class*=sn-left].sn-open #tc-page-wrap {
+            -webkit-transform: translate3d( 330px, 0, 0 );
+            -moz-transform: translate3d( 330px, 0, 0 );
+            transform: translate3d( 330px, 0, 0 );
+          }
+          [class*=sn-right].sn-open #tc-page-wrap, [class*=sn-left].sn-close #tc-page-wrap {
+            -webkit-transform: translate3d( -330px, 0, 0 );
+            -moz-transform: translate3d( -330px, 0, 0 );
+             transform: translate3d( -330px, 0, 0 );
+          }
+          /* stick the sticky header to the left/right of the page wrapper */
+          .tc-sticky-header.tc-sn-visible:not(.animating)[class*=sn-left] .tc-header { left: 330px; }
+          .tc-sticky-header.tc-sn-visible:not(.animating)[class*=sn-right] .tc-header { right: 330px; }
+          /* ie<9 breaks using :not */
+          .no-csstransforms3d .tc-sticky-header.tc-sn-visible[class*=sn-left] .tc-header { left: 330px; }
+          .no-csstransforms3d .tc-sticky-header.tc-sn-visible[class*=sn-right] .tc-header { right: 330px; }
+      
+</style>
+<link rel='stylesheet' id='customizr-style-css'  href='https://www.dsconsultant.net/blog/wp-content/themes/customizr/style.css?ver=4.1.55' type='text/css' media='all' />
+<link rel='stylesheet' id='fancyboxcss-css'  href='https://www.dsconsultant.net/blog/wp-content/themes/customizr/assets/front/js/libs/fancybox/jquery.fancybox-1.3.4.min.css?ver=5.3.4' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var exactmetrics_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.dsconsultant.net\/blog","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.dsconsultant.net/blog/wp-content/plugins/google-analytics-dashboard-for-wp/assets/js/frontend.min.js?ver=6.0.1'></script>
+<script type='text/javascript' src='https://www.dsconsultant.net/blog/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://www.dsconsultant.net/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.dsconsultant.net/blog/wp-content/themes/customizr/assets/front/js/libs/fancybox/jquery.fancybox-1.3.4.min.js?ver=4.1.55'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var TCParams = {"_disabled":[],"FancyBoxState":"1","FancyBoxAutoscale":"1","SliderName":"","SliderDelay":"","SliderHover":"1","centerSliderImg":"1","SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"anchorSmoothScroll":"linear","anchorSmoothScrollExclude":{"simple":["[class*=edd]",".tc-carousel-control",".carousel-control","[data-toggle=\"modal\"]","[data-toggle=\"dropdown\"]","[data-toggle=\"tooltip\"]","[data-toggle=\"popover\"]","[data-toggle=\"collapse\"]","[data-toggle=\"tab\"]","[data-toggle=\"pill\"]","[class*=upme]","[class*=um-]"],"deep":{"classes":[],"ids":[]}},"ReorderBlocks":"1","centerAllImg":"1","HasComments":"1","LeftSidebarClass":".span3.left.tc-sidebar","RightSidebarClass":".span3.right.tc-sidebar","LoadModernizr":"1","stickyCustomOffset":{"_initial":0,"_scrolling":0,"options":{"_static":true,"_element":""}},"stickyHeader":"1","dropdowntoViewport":"","timerOnScrollAllBrowsers":"1","extLinksStyle":"","extLinksTargetExt":"","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"dropcapEnabled":"","dropcapWhere":{"post":"","page":""},"dropcapMinWords":"50","dropcapSkipSelectors":{"tags":["IMG","IFRAME","H1","H2","H3","H4","H5","H6","BLOCKQUOTE","UL","OL"],"classes":["btn","tc-placeholder-wrap"],"id":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":[".article-container",".__before_main_wrapper",".widget-front"],"opts":{"excludeImg":[".tc-holder-img"]}},"imgSmartLoadsForSliders":"","goldenRatio":"1.618","gridGoldenRatioLimit":"350","isSecondMenuEnabled":"1","secondMenuRespSet":"in-sn-before","isParallaxOn":"1","parallaxRatio":"0.55","pluginCompats":[],"adminAjaxUrl":"https:\/\/www.dsconsultant.net\/blog\/wp-admin\/admin-ajax.php","ajaxUrl":"https:\/\/www.dsconsultant.net\/blog\/?czrajax=1","frontNonce":{"id":"CZRFrontNonce","handle":"09e1380f89"},"isDevMode":"","isModernStyle":"","i18n":{"Permanently dismiss":"Fermer d\u00e9finitivement"},"frontNotifications":{"styleSwitcher":{"enabled":false,"content":"","dismissAction":"dismiss_style_switcher_note_front","ajaxUrl":"https:\/\/www.dsconsultant.net\/blog\/wp-admin\/admin-ajax.php"}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.dsconsultant.net/blog/wp-content/themes/customizr/inc/assets/js/tc-scripts.min.js?ver=4.1.55'></script>
+<link rel='https://api.w.org/' href='https://www.dsconsultant.net/blog/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.dsconsultant.net/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.dsconsultant.net/blog/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3.4" />
+<link rel='shortlink' href='https://www.dsconsultant.net/blog/?p=167' />
+<link rel="alternate" type="application/json+oembed" href="https://www.dsconsultant.net/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.dsconsultant.net%2Fblog%2Fapple%2Fvirtualbox-clavier-windows-sur-macbook-et-macbookpro-etc" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.dsconsultant.net/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.dsconsultant.net%2Fblog%2Fapple%2Fvirtualbox-clavier-windows-sur-macbook-et-macbookpro-etc&#038;format=xml" />
+
+	<!-- begin gallery scripts -->
+    <link rel="stylesheet" href="https://www.dsconsultant.net/blog/wp-content/plugins/featured-content-gallery/css/jd.gallery.css.php" type="text/css" media="screen" charset="utf-8"/>
+	<link rel="stylesheet" href="https://www.dsconsultant.net/blog/wp-content/plugins/featured-content-gallery/css/jd.gallery.css" type="text/css" media="screen" charset="utf-8"/>
+	<script type="text/javascript" src="https://www.dsconsultant.net/blog/wp-content/plugins/featured-content-gallery/scripts/mootools.v1.11.js"></script>
+	<script type="text/javascript" src="https://www.dsconsultant.net/blog/wp-content/plugins/featured-content-gallery/scripts/jd.gallery.js.php"></script>
+	<script type="text/javascript" src="https://www.dsconsultant.net/blog/wp-content/plugins/featured-content-gallery/scripts/jd.gallery.transitions.js"></script>
+	<!-- end gallery scripts -->
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>	</head>
+	
+	<body class="post-template-default single single-post postid-167 single-format-standard wp-embed-responsive tc-fade-hover-links tc-l-sidebar tc-center-images skin-grey tc-sticky-header sticky-disabled tc-transparent-on-scroll no-navbar tc-side-menu tc-sticky-footer sn-right" >
+            <a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+                  <nav id="tc-sn" class="tc-sn navbar">
+            <div class="tc-sn-inner nav-collapse">
+              <div class="btn-toggle-nav sn-toggle pull-right"><button type="button" class="btn menu-btn"  title="fermer" aria-label="fermer"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button></div><div class="sn-nav-wrapper"><div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav sn-nav"><li id="menu-item-550" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-550"><a href="https://www.dsconsultant.net/blog/">Accueil</a></li>
+<li id="menu-item-551" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551"><a href="https://www.dsconsultant.net/blog/a-propos">À propos</a></li>
+<li id="menu-item-1056" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-1056"><a>Articles <strong class="caret"></strong></a>
+<ul class="dropdown-menu">
+	<li id="menu-item-560" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-560"><a href="https://www.dsconsultant.net/blog/category/trucs-et-astuces">Trucs et Astuces</a></li>
+	<li id="menu-item-1059" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1059"><a href="https://www.dsconsultant.net/blog/category/pcwindows">Pc, Windows&#8230;</a></li>
+	<li id="menu-item-1057" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1057"><a href="https://www.dsconsultant.net/blog/category/apple">Apple Macintosh, MacOSX&#8230;</a></li>
+	<li id="menu-item-1058" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1058"><a href="https://www.dsconsultant.net/blog/category/internet">Internet</a></li>
+	<li id="menu-item-555" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-555"><a href="https://www.dsconsultant.net/blog/category/news">News</a></li>
+</ul>
+</li>
+<li id="menu-item-1061" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1061"><a href="https://www.dsconsultant.net/blog/services-informatiques">Services <strong class="caret"></strong></a>
+<ul class="dropdown-menu">
+	<li id="menu-item-1064" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1064"><a href="https://www.dsconsultant.net/blog/services-informatiques">Services informatiques &#8211; Apple Macintosh &#8211; Pc Windows</a></li>
+	<li id="menu-item-1062" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1062"><a href="https://www.dsconsultant.net/blog/referencement-de-site-web">Référencement de site Web &#8211; Média sociaux &#8211; Facebook</a></li>
+</ul>
+</li>
+<li id="menu-item-1063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1063"><a href="https://www.dsconsultant.net/blog/avast-antivirus">Avast</a></li>
+<li id="menu-item-1072" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1072"><a href="https://www.dsconsultant.net/Contact/contact.php">Contact</a></li>
+</ul></div></div>            </div><!--.tc-sn-inner -->
+          </nav><!-- //#tc-sn -->
+        
+    <div id="tc-page-wrap" class="">
+
+  		
+  	   	<header class="tc-header clearfix row-fluid tc-tagline-on tc-title-logo-on  tc-shrink-on tc-menu-on logo-left tc-second-menu-on tc-second-menu-in-sn-before-when-mobile">
+  			      <div class="brand span3 pull-left ">
+
+        <h1><a class="site-title" href="https://www.dsconsultant.net/blog/">Mes Notes, Astuces &amp; Conseils informatiques</a></h1>
+      </div> <!-- brand span3 pull-left -->
+      <div class="container outside"><h2 class="site-description">Dominique Schos Consultant Conseil informatique Maroc</h2></div>      	<div class="navbar-wrapper clearfix span9 tc-submenu-fade tc-submenu-move tc-open-on-hover pull-menu-left">
+        	<div class="navbar resp">
+          		<div class="navbar-inner" role="navigation">
+            		<div class="row-fluid">
+              		<div class="social-block span5"><div class="social-links"><a rel="nofollow noopener noreferrer" class="social-icon icon-facebook"  title="Suivez-moi sur Facebook" aria-label="Suivez-moi sur Facebook" href="https://www.facebook.com/dsconsultant.net/"  target="_blank" ><i class="fab fa-facebook"></i></a><a rel="nofollow noopener noreferrer" class="social-icon icon-linkedin"  title="Suivez-moi sur LinkedIn" aria-label="Suivez-moi sur LinkedIn" href="https://www.linkedin.com/in/dominique-schos-5641998?trk=hp-identity-name"  target="_blank" ><i class="fab fa-linkedin"></i></a></div></div><h2 class="span7 inside site-description">Dominique Schos Consultant Conseil informatique Maroc</h2><div class="btn-toggle-nav sn-toggle pull-right"><button type="button" class="btn menu-btn"  title="Ouvrir le menu" aria-label="Ouvrir le menu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button></div><div class="nav-collapse collapse tc-hover-menu-wrapper"><div class="menu-menu-1-container"><ul id="menu-menu-4" class="nav tc-hover-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-550"><a href="https://www.dsconsultant.net/blog/">Accueil</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551"><a href="https://www.dsconsultant.net/blog/a-propos">À propos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-1056"><a href="#">Articles <strong class="caret"></strong></a>
+<ul class="dropdown-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-560"><a href="https://www.dsconsultant.net/blog/category/trucs-et-astuces">Trucs et Astuces</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1059"><a href="https://www.dsconsultant.net/blog/category/pcwindows">Pc, Windows&#8230;</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1057"><a href="https://www.dsconsultant.net/blog/category/apple">Apple Macintosh, MacOSX&#8230;</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1058"><a href="https://www.dsconsultant.net/blog/category/internet">Internet</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-555"><a href="https://www.dsconsultant.net/blog/category/news">News</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1061"><a href="https://www.dsconsultant.net/blog/services-informatiques">Services <strong class="caret"></strong></a>
+<ul class="dropdown-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1064"><a href="https://www.dsconsultant.net/blog/services-informatiques">Services informatiques &#8211; Apple Macintosh &#8211; Pc Windows</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1062"><a href="https://www.dsconsultant.net/blog/referencement-de-site-web">Référencement de site Web &#8211; Média sociaux &#8211; Facebook</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1063"><a href="https://www.dsconsultant.net/blog/avast-antivirus">Avast</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1072"><a href="https://www.dsconsultant.net/Contact/contact.php">Contact</a></li>
+</ul></div></div>          			</div><!-- /.row-fluid -->
+          		</div><!-- /.navbar-inner -->
+        	</div><!-- /.navbar resp -->
+      	</div><!-- /.navbar-wrapper -->
+    	  		</header>
+  		<div id="tc-reset-margin-top" class="container-fluid" style="margin-top:103px"></div><div id="main-wrapper" class="container">
+
+    <div class="tc-hot-crumble container" role="navigation"><div class="row"><div class="span12"><div class="breadcrumb-trail breadcrumbs"><span class="trail-begin"><a href="https://www.dsconsultant.net/blog" title="Mes Notes, Astuces &amp; Conseils informatiques" rel="home" class="trail-begin">Accueil</a></span> <span class="sep">&raquo;</span> <a href="https://www.dsconsultant.net/blog/category/apple" title="Apple Macintosh, MacOSX...">Apple Macintosh, MacOSX...</a> <span class="sep">&raquo;</span> <span class="trail-end">VirtualBox : Clavier Windows sur Macbook et MacBookPro {@#&#8230;} etc&#8230; </span></div></div></div></div>
+    <div class="container" role="main">
+        <div class="row column-content-wrapper">
+
+            
+        <div class="span3 left tc-sidebar">
+           <div id="left" class="widget-area" role="complementary">
+              <aside id="search-5" class="widget widget_search"><h3 class="widget-title">Rechercher un sujet ou un article</h3><form role="search" method="get" id="searchform" class="searchform" action="https://www.dsconsultant.net/blog/">
+				<div>
+					<label class="screen-reader-text" for="s">Rechercher :</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Rechercher" />
+				</div>
+			</form></aside>		<aside id="recent-posts-5" class="widget widget_recent_entries">		<h3 class="widget-title">Articles récents</h3>		<ul>
+											<li>
+					<a href="https://www.dsconsultant.net/blog/internet/utilisateurs-de-chrome-victimes-de-faux-bloqueurs-de-pub-fake-ad-bocker">Les utilisateurs de Chrome victimes de faux bloqueurs de pub &#8211; (Fake ad bocker)</a>
+									</li>
+											<li>
+					<a href="https://www.dsconsultant.net/blog/pcwindows/enorme-faille-de-securite-au-sein-des-puces-intel-le-monde-informatique">Enorme faille de sécurité au sein des puces Intel &#8211; Le Monde Informatique</a>
+									</li>
+											<li>
+					<a href="https://www.dsconsultant.net/blog/divers/lintelligence-artificielle-va-nous-manger-tout-cru">L’intelligence artificielle va nous manger tout cru</a>
+									</li>
+											<li>
+					<a href="https://www.dsconsultant.net/blog/internet/711-millions-dadresses-mail-piratees">711 millions d&rsquo;adresses mail piratées</a>
+									</li>
+											<li>
+					<a href="https://www.dsconsultant.net/blog/apple/avast-antivirus-gratuit-pour-mac-protection-pour-os-x">Antivirus Gratuit | Protection pour Mac OS X</a>
+									</li>
+					</ul>
+		</aside><aside id="recent-comments-3" class="widget widget_recent_comments"><h3 class="widget-title">Commentaires récents</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">DS</span> dans <a href="https://www.dsconsultant.net/blog/apple/excel-insertion-colonnes-ou-lignes-impossible/comment-page-1#comment-55911">Excel, insertion colonnes ou lignes impossible</a></li><li class="recentcomments"><span class="comment-author-link">S ADJ</span> dans <a href="https://www.dsconsultant.net/blog/apple/excel-insertion-colonnes-ou-lignes-impossible/comment-page-1#comment-55910">Excel, insertion colonnes ou lignes impossible</a></li><li class="recentcomments"><span class="comment-author-link">zamora</span> dans <a href="https://www.dsconsultant.net/blog/internet/iq-elite-attention-danger/comment-page-1#comment-55824">IQ Elite &#8211; Attention danger !</a></li><li class="recentcomments"><span class="comment-author-link">ZAMORA</span> dans <a href="https://www.dsconsultant.net/blog/internet/iq-elite-attention-danger/comment-page-1#comment-55823">IQ Elite &#8211; Attention danger !</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://Modim' rel='external nofollow ugc' class='url'>Rabie</a></span> dans <a href="https://www.dsconsultant.net/blog/internet/sagem-fast-3304-v2-modifier-ladresse-ip/comment-page-1#comment-55521">Sagem Fast 3304 V2 modifier l&rsquo;adresse IP</a></li></ul></aside><aside id="tag_cloud-5" class="widget widget_tag_cloud"><h3 class="widget-title">Mots Clés</h3><div class="tagcloud"><a href="https://www.dsconsultant.net/blog/tag/affichage-a-lenvers" class="tag-cloud-link tag-link-9 tag-link-position-1" style="font-size: 8pt;" aria-label="affichage à l&#039;envers (1 élément)">affichage à l&#039;envers</a>
+<a href="https://www.dsconsultant.net/blog/tag/antivirus-avast" class="tag-cloud-link tag-link-26 tag-link-position-2" style="font-size: 22pt;" aria-label="Antivirus AVAST (4 éléments)">Antivirus AVAST</a>
+<a href="https://www.dsconsultant.net/blog/tag/apercu" class="tag-cloud-link tag-link-53 tag-link-position-3" style="font-size: 8pt;" aria-label="aperçu (1 élément)">aperçu</a>
+<a href="https://www.dsconsultant.net/blog/tag/apple-2" class="tag-cloud-link tag-link-36 tag-link-position-4" style="font-size: 8pt;" aria-label="Apple (1 élément)">Apple</a>
+<a href="https://www.dsconsultant.net/blog/tag/canular" class="tag-cloud-link tag-link-11 tag-link-position-5" style="font-size: 8pt;" aria-label="canular (1 élément)">canular</a>
+<a href="https://www.dsconsultant.net/blog/tag/cloud" class="tag-cloud-link tag-link-28 tag-link-position-6" style="font-size: 8pt;" aria-label="cloud (1 élément)">cloud</a>
+<a href="https://www.dsconsultant.net/blog/tag/commande-en-double-dans-le-menu-pomme" class="tag-cloud-link tag-link-21 tag-link-position-7" style="font-size: 8pt;" aria-label="commande en double dans le menu pomme (1 élément)">commande en double dans le menu pomme</a>
+<a href="https://www.dsconsultant.net/blog/tag/convertisseur-audio" class="tag-cloud-link tag-link-24 tag-link-position-8" style="font-size: 8pt;" aria-label="convertisseur audio (1 élément)">convertisseur audio</a>
+<a href="https://www.dsconsultant.net/blog/tag/coup-doeil" class="tag-cloud-link tag-link-52 tag-link-position-9" style="font-size: 8pt;" aria-label="coup d&#039;oeil (1 élément)">coup d&#039;oeil</a>
+<a href="https://www.dsconsultant.net/blog/tag/demarrage-mac" class="tag-cloud-link tag-link-14 tag-link-position-10" style="font-size: 8pt;" aria-label="démarrage Mac (1 élément)">démarrage Mac</a>
+<a href="https://www.dsconsultant.net/blog/tag/emailing" class="tag-cloud-link tag-link-50 tag-link-position-11" style="font-size: 8pt;" aria-label="emailing (1 élément)">emailing</a>
+<a href="https://www.dsconsultant.net/blog/tag/envoi-de-courrier-en-masse" class="tag-cloud-link tag-link-51 tag-link-position-12" style="font-size: 8pt;" aria-label="envoi de courrier en masse (1 élément)">envoi de courrier en masse</a>
+<a href="https://www.dsconsultant.net/blog/tag/envoi-de-gros-fichier" class="tag-cloud-link tag-link-29 tag-link-position-13" style="font-size: 8pt;" aria-label="envoi de gros fichier (1 élément)">envoi de gros fichier</a>
+<a href="https://www.dsconsultant.net/blog/tag/excel" class="tag-cloud-link tag-link-41 tag-link-position-14" style="font-size: 8pt;" aria-label="excel (1 élément)">excel</a>
+<a href="https://www.dsconsultant.net/blog/tag/firewire" class="tag-cloud-link tag-link-13 tag-link-position-15" style="font-size: 8pt;" aria-label="Firewire (1 élément)">Firewire</a>
+<a href="https://www.dsconsultant.net/blog/tag/format-nombre" class="tag-cloud-link tag-link-43 tag-link-position-16" style="font-size: 8pt;" aria-label="format nombre (1 élément)">format nombre</a>
+<a href="https://www.dsconsultant.net/blog/tag/galaxy" class="tag-cloud-link tag-link-47 tag-link-position-17" style="font-size: 8pt;" aria-label="galaxy (1 élément)">galaxy</a>
+<a href="https://www.dsconsultant.net/blog/tag/hoax" class="tag-cloud-link tag-link-12 tag-link-position-18" style="font-size: 14.3pt;" aria-label="hoax (2 éléments)">hoax</a>
+<a href="https://www.dsconsultant.net/blog/tag/informatique" class="tag-cloud-link tag-link-71 tag-link-position-19" style="font-size: 8pt;" aria-label="informatique (1 élément)">informatique</a>
+<a href="https://www.dsconsultant.net/blog/tag/internet" class="tag-cloud-link tag-link-70 tag-link-position-20" style="font-size: 14.3pt;" aria-label="internet (2 éléments)">internet</a>
+<a href="https://www.dsconsultant.net/blog/tag/internet-agadir" class="tag-cloud-link tag-link-18 tag-link-position-21" style="font-size: 8pt;" aria-label="internet Agadir (1 élément)">internet Agadir</a>
+<a href="https://www.dsconsultant.net/blog/tag/ipad" class="tag-cloud-link tag-link-22 tag-link-position-22" style="font-size: 8pt;" aria-label="ipad (1 élément)">ipad</a>
+<a href="https://www.dsconsultant.net/blog/tag/mac-esclave" class="tag-cloud-link tag-link-15 tag-link-position-23" style="font-size: 8pt;" aria-label="Mac esclave (1 élément)">Mac esclave</a>
+<a href="https://www.dsconsultant.net/blog/tag/mail" class="tag-cloud-link tag-link-31 tag-link-position-24" style="font-size: 8pt;" aria-label="mail (1 élément)">mail</a>
+<a href="https://www.dsconsultant.net/blog/tag/mailin" class="tag-cloud-link tag-link-48 tag-link-position-25" style="font-size: 8pt;" aria-label="Mailin (1 élément)">Mailin</a>
+<a href="https://www.dsconsultant.net/blog/tag/mailnig-liste" class="tag-cloud-link tag-link-49 tag-link-position-26" style="font-size: 8pt;" aria-label="mailnig liste (1 élément)">mailnig liste</a>
+<a href="https://www.dsconsultant.net/blog/tag/nombre-en-texte" class="tag-cloud-link tag-link-42 tag-link-position-27" style="font-size: 8pt;" aria-label="nombre en texte (1 élément)">nombre en texte</a>
+<a href="https://www.dsconsultant.net/blog/tag/offre-apple" class="tag-cloud-link tag-link-37 tag-link-position-28" style="font-size: 8pt;" aria-label="offre Apple (1 élément)">offre Apple</a>
+<a href="https://www.dsconsultant.net/blog/tag/piece-jointe" class="tag-cloud-link tag-link-20 tag-link-position-29" style="font-size: 8pt;" aria-label="pièce jointe (1 élément)">pièce jointe</a>
+<a href="https://www.dsconsultant.net/blog/tag/protection-android" class="tag-cloud-link tag-link-44 tag-link-position-30" style="font-size: 14.3pt;" aria-label="protection Android (2 éléments)">protection Android</a>
+<a href="https://www.dsconsultant.net/blog/tag/ransonware" class="tag-cloud-link tag-link-67 tag-link-position-31" style="font-size: 8pt;" aria-label="ransonware (1 élément)">ransonware</a>
+<a href="https://www.dsconsultant.net/blog/tag/referencement-maroc" class="tag-cloud-link tag-link-16 tag-link-position-32" style="font-size: 8pt;" aria-label="référencement Maroc (1 élément)">référencement Maroc</a>
+<a href="https://www.dsconsultant.net/blog/tag/referencement-site-web" class="tag-cloud-link tag-link-17 tag-link-position-33" style="font-size: 8pt;" aria-label="référencement site web (1 élément)">référencement site web</a>
+<a href="https://www.dsconsultant.net/blog/tag/samsung" class="tag-cloud-link tag-link-46 tag-link-position-34" style="font-size: 8pt;" aria-label="samsung (1 élément)">samsung</a>
+<a href="https://www.dsconsultant.net/blog/tag/sauvegarde" class="tag-cloud-link tag-link-30 tag-link-position-35" style="font-size: 8pt;" aria-label="sauvegarde (1 élément)">sauvegarde</a>
+<a href="https://www.dsconsultant.net/blog/tag/session-temporaire" class="tag-cloud-link tag-link-32 tag-link-position-36" style="font-size: 8pt;" aria-label="Session temporaire (1 élément)">Session temporaire</a>
+<a href="https://www.dsconsultant.net/blog/tag/skype-2-8-mac-powerpc" class="tag-cloud-link tag-link-23 tag-link-position-37" style="font-size: 8pt;" aria-label="Skype 2.8 Mac PowerPC (1 élément)">Skype 2.8 Mac PowerPC</a>
+<a href="https://www.dsconsultant.net/blog/tag/suppression-fichier" class="tag-cloud-link tag-link-25 tag-link-position-38" style="font-size: 8pt;" aria-label="suppression fichier (1 élément)">suppression fichier</a>
+<a href="https://www.dsconsultant.net/blog/tag/systeme-antivol" class="tag-cloud-link tag-link-45 tag-link-position-39" style="font-size: 8pt;" aria-label="système antivol (1 élément)">système antivol</a>
+<a href="https://www.dsconsultant.net/blog/tag/transfert-de-fichier" class="tag-cloud-link tag-link-19 tag-link-position-40" style="font-size: 8pt;" aria-label="transfert de fichier (1 élément)">transfert de fichier</a>
+<a href="https://www.dsconsultant.net/blog/tag/virus" class="tag-cloud-link tag-link-10 tag-link-position-41" style="font-size: 14.3pt;" aria-label="virus (2 éléments)">virus</a>
+<a href="https://www.dsconsultant.net/blog/tag/vista" class="tag-cloud-link tag-link-8 tag-link-position-42" style="font-size: 8pt;" aria-label="vista (1 élément)">vista</a>
+<a href="https://www.dsconsultant.net/blog/tag/wanacrypt" class="tag-cloud-link tag-link-68 tag-link-position-43" style="font-size: 8pt;" aria-label="wanacrypt (1 élément)">wanacrypt</a>
+<a href="https://www.dsconsultant.net/blog/tag/windows" class="tag-cloud-link tag-link-69 tag-link-position-44" style="font-size: 8pt;" aria-label="windows (1 élément)">windows</a>
+<a href="https://www.dsconsultant.net/blog/tag/xp-rotation-ecran" class="tag-cloud-link tag-link-7 tag-link-position-45" style="font-size: 8pt;" aria-label="xp rotation écran (1 élément)">xp rotation écran</a></div>
+</aside>            </div><!-- //#left or //#right -->
+        </div><!--.tc-sidebar -->
+
+        
+                <div id="content" class="span9 article-container tc-gallery-style">
+
+                    
+                        
+                                                                                    
+                                                                    <article id="post-167" class="row-fluid post-167 post type-post status-publish format-standard category-apple category-trucs-et-astuces czr-hentry">
+                                                <header class="entry-header">
+          <h1 class="entry-title ">VirtualBox : Clavier Windows sur Macbook et MacBookPro {@#&#8230;} etc&#8230; <span class="comments-link"><a href="#tc-comment-title" title="4 Commentaire(s) sur VirtualBox : Clavier Windows sur Macbook et MacBookPro {@#&#8230;} etc&#8230;" data-disqus-identifier="javascript:this.page.identifier"><span class="tc-comment-bubble default-bubble">4 </span></a></span></h1><div class="entry-meta"><a href="https://www.dsconsultant.net/blog/2010/05/10" title="14 h 50 min" rel="bookmark"><time class="entry-date updated" datetime="2010-05-10T14:50:49+00:00">10 Mai, 2010</time></a> &nbsp;dans <a class="" href="https://www.dsconsultant.net/blog/category/apple" title="Voir tous les billets dans Apple Macintosh, MacOSX..."> Apple Macintosh, MacOSX... </a> / <a class="" href="https://www.dsconsultant.net/blog/category/trucs-et-astuces" title="Voir tous les billets dans Trucs et Astuces"> Trucs et Astuces </a> <span class="by-author"> par <span class="author vcard author_name"><a class="url fn n" href="https://www.dsconsultant.net/blog/author/admin" title="Voir tous les billets de Dominique Schos" rel="author">Dominique Schos</a></span></span> </div><hr class="featurette-divider __before_content">        </header>
+                  <section class="entry-content ">
+              <div id="_mcePaste">
+<div id="_mcePaste"><a href="http://wikis.sun.com/display/MacSunFrance/VirtualBox#VirtualBox-ParamétrageClavierMacbookpourWindows ">http://wikis.sun.com/display/MacSunFrance/VirtualBox#VirtualBox-ParamétrageClavierMacbookpourWindows</a></div>
+</div>
+<p>Cette manipulation va permettre de remplacer le mappage clavier sous VirtualBox pour pouvoir taper les caractères @#} etc&#8230;<span id="more-167"></span></p>
+<div id="_mcePaste">
+<div id="_mcePaste">Si un Clavier (FR) a déjà été rajouté, il est préférable de le supprimer avant de lancer l&rsquo;exécutable LayoutVE_i386.msi téléchargeable ici : <a href="http://wikis.sun.com/download/attachments/200873369/Clavier_Apple-Macbook-VE-i386.zip">Clavier_Apple-Macbook-VE-i386.zip</a> qui va rajouter un nouveau clavier Français.</div>
+<div>Note : Cet exécutable permet également de « supprimer/réparer » LE Clavier « French &#8211; Apple » lorsqu&rsquo;il a déjà été installé.</div>
+<div id="_mcePaste">Ensuite, il est également nécessaire de vérifier le paramétrage des Options Langues &amp; Clavier (FR), le (EN) étant le clavier configuré par défaut.</div>
+<div id="_mcePaste">Démarrer &gt; Panneau de configuration  &gt;  Options Régionales -&gt; dans le PopUP choisir Français (France)</div>
+<div id="_mcePaste">&gt; Langues &gt; (Details…)</div>
+<div id="_mcePaste">&gt; Options avancées</div>
+<div id="_mcePaste">Langue pour les programmes non-Unicode  : Français (France)</div>
+<div id="_mcePaste">et cocher : Appliquer tous les paramètres au compte&#8230;</div>
+<div id="_mcePaste">&gt; (Appiquez)</div>
+<div id="_mcePaste">&gt; (OK)</div>
+<div id="_mcePaste">Verifier que le clavier (FR) est bien sélectionné : C&rsquo;est logo (FR)  qui doit apparaitre en bas à droite dans la barre de menu et non le (EN) . Il est vite fait (1 clic) de commuter en clavier (EN) &#8230;</div>
+<div id="_mcePaste">Faire un test avec les caractères spéciaux (@,#,-,_,=,+,/ &#8230;). Si problème alors, se délogger et se relogger de sa session Windows.</div>
+<div id="_mcePaste">Et voila un clavier macbook entièrement opérationnel sur Windows XP virtualisé par VirtualBox. Ce Clavier « French &#8211; Apple » supporte également tous les caractères spéciaux suivants (combinaison des touches Ctrl et Shift) :</div>
+<div id="_mcePaste">« } » (accolade) : Ctrl + )</div>
+<div id="_mcePaste">« [ » (crochet) : Ctrl + Shift + (</div>
+<div id="_mcePaste">« € » (Euro) : Ctrl + $</div>
+<div id="_mcePaste">« l » (pipe) : Ctrl + L</div>
+<div id="_mcePaste">« ~ » (tilde) : Ctrl + N</div>
+<div id="_mcePaste">« \ » (backslash) : *Ctrl + /</div>
+<div id="_mcePaste">« ` » (quillemet inv) : Ctrl + &lsquo;</div>
+</div>
+                                      </section><!-- .entry-content -->
+        <footer class="entry-meta"><hr class="featurette-divider"><div class="author-info-wrapper"><div class="author-info"><div class="row-fluid"><div class="comment-avatar author-avatar span2"><img alt='' src='https://secure.gravatar.com/avatar/5df6b5e6cea471da661f13bc21e3e889?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5df6b5e6cea471da661f13bc21e3e889?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div> <div class="author-description span10"><h3>A propos de Dominique Schos</h3><div>De MacOS 1.0 en 1984 à OSX10.12 High Sierra, de MS-DOS 1 à Windows10, de IOS Apple à Android, des premiers "Tchat" à Facebook Live, je ne me lasse pas de "flirter" avec ces technologies et moyens de communications que j'aime mettre à votre service...</div><div class="author-link"><a href="https://www.dsconsultant.net/blog/author/admin" rel="author">Voir tous les billets de Dominique Schos <span class="meta-nav">&rarr;</span></a></div></div></div></div></div></footer>                                    </article>
+                                
+                            
+                        
+                    <hr class="featurette-divider __after_loop">
+<div id="comments" class="comments-area" >
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Laissez un commentaire <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/apple/virtualbox-clavier-windows-sur-macbook-et-macbookpro-etc#respond" style="display:none;">Annuler la réponse</a></small></h3><form action="https://www.dsconsultant.net/blog/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Votre adresse de messagerie ne sera pas publiée.</span> Les champs obligatoires sont indiqués avec <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Commentaire</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Nom <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Adresse de messagerie <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Site web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Enregistrer mon nom, mon e-mail et mon site web dans le navigateur pour mon prochain commentaire.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Laisser un commentaire" /> <input type='hidden' name='comment_post_ID' value='167' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5114c99748" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="235"/></p></form>	</div><!-- #respond -->
+	<h2 id="tc-comment-title" class="comments-title">4 commentaires sur &ldquo;<span>VirtualBox : Clavier Windows sur Macbook et MacBookPro {@#&#8230;} etc&#8230;</span>&rdquo;</h2>              <ul class="commentlist">
+                        <li class="comment even thread-even depth-1" id="li-comment-45462">
+
+            <article id="comment-45462" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt='' src='https://secure.gravatar.com/avatar/04ee329504401e69468759f005d48996?s=80&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/04ee329504401e69468759f005d48996?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></div><div class="span10"><div class="reply btn btn-small"><a rel='nofollow' class='comment-reply-link' href='#comment-45462' data-commentid="45462" data-postid="167" data-belowelement="comment-45462" data-respondelement="respond" aria-label='Répondre à Nani'>Répondre <span>&darr;</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn"><a href='http://www.facebook.com/profile.php?id=100003469593112' rel='external nofollow ugc' class='url'>Nani</a>  </cite> <a class="comment-date" href="https://www.dsconsultant.net/blog/apple/virtualbox-clavier-windows-sur-macbook-et-macbookpro-etc#comment-45462"><time datetime="2015-10-28T15:26:47+00:00">28 octobre 2015 à 15 h 26 min</time></a></header>  <section class="comment-content comment"><p>Someone from developers of vBox needs some ass kick slreousiy ! I have heard a lot how vBox is state of the art free virtualization app and how everything is great and works !  In reality nothing but headaches and problems for things that should works out from the box !!! I don&rsquo;t care that is free in fact with free software one has even more problems like free software free problems   the more the freedom the more the problems ! Nothing seems to work as promised advertised network problems guest appliance not installing no network adapter in guests and so on !!! What they are doing ? Inventing how to bring user nerves sky high or what ??? If they can&rsquo;t do it properly they should packs the bags and go raise vegetables and leave open source to handle it ! I&rsquo;m pretty sure that such glitches under open source community would not be tolerated in long term and will be fixed pretty soon !!! But today we are losing nerves on crappy coding !!!</p>
+</section></div></div></article>          <!-- //#comment-## -->
+        </li><!-- #comment-## -->
+        <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3737">
+
+            <article id="comment-3737" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt='' src='https://secure.gravatar.com/avatar/033efb67dfdb5be1a4b9faa7fe9143b7?s=80&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/033efb67dfdb5be1a4b9faa7fe9143b7?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></div><div class="span10"><div class="reply btn btn-small"><a rel='nofollow' class='comment-reply-link' href='#comment-3737' data-commentid="3737" data-postid="167" data-belowelement="comment-3737" data-respondelement="respond" aria-label='Répondre à Robert Genuario'>Répondre <span>&darr;</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn"><a href='http://www.yellowbot.com/user/3raqpgr' rel='external nofollow ugc' class='url'>Robert Genuario</a>  </cite> <a class="comment-date" href="https://www.dsconsultant.net/blog/apple/virtualbox-clavier-windows-sur-macbook-et-macbookpro-etc#comment-3737"><time datetime="2012-06-23T20:52:41+00:00">23 juin 2012 à 20 h 52 min</time></a></header>  <section class="comment-content comment"><p>It¡¦s really a nice and helpful piece of information. I am glad that you shared this useful info with us. Please keep us up to date like this. Thank you for sharing.</p>
+</section></div></div></article>          <!-- //#comment-## -->
+        </li><!-- #comment-## -->
+        <li class="comment even thread-even depth-1" id="li-comment-36">
+
+            <article id="comment-36" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt='' src='https://secure.gravatar.com/avatar/85e692889f2764502f697cfe9a2ce7cc?s=80&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/85e692889f2764502f697cfe9a2ce7cc?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></div><div class="span10"><div class="reply btn btn-small"><a rel='nofollow' class='comment-reply-link' href='#comment-36' data-commentid="36" data-postid="167" data-belowelement="comment-36" data-respondelement="respond" aria-label='Répondre à Joan Amazan'>Répondre <span>&darr;</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn"><a href='http://astore.amazon.com/cheap.azerty.keyboard.onsale-20' rel='external nofollow ugc' class='url'>Joan Amazan</a>  </cite> <a class="comment-date" href="https://www.dsconsultant.net/blog/apple/virtualbox-clavier-windows-sur-macbook-et-macbookpro-etc#comment-36"><time datetime="2010-07-02T18:06:33+00:00">2 juillet 2010 à 18 h 06 min</time></a></header>  <section class="comment-content comment"><p>Amazing pal. Its good and such an awesome factor. I might include this to my rss feed</p>
+</section></div></div></article>          <!-- //#comment-## -->
+        </li><!-- #comment-## -->
+        <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-26">
+
+            <article id="comment-26" class="comment"><div class="row-fluid"><div class="comment-avatar span2"><img alt='' src='https://secure.gravatar.com/avatar/9bb9b2da385416b8c90ba619e1be70d1?s=80&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/9bb9b2da385416b8c90ba619e1be70d1?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /></div><div class="span10"><div class="reply btn btn-small"><a rel='nofollow' class='comment-reply-link' href='#comment-26' data-commentid="26" data-postid="167" data-belowelement="comment-26" data-respondelement="respond" aria-label='Répondre à weliabara'>Répondre <span>&darr;</span></a></div> <header class="comment-meta comment-author vcard"><cite class="fn">weliabara  </cite> <a class="comment-date" href="https://www.dsconsultant.net/blog/apple/virtualbox-clavier-windows-sur-macbook-et-macbookpro-etc#comment-26"><time datetime="2010-05-27T10:50:33+00:00">27 mai 2010 à 10 h 50 min</time></a></header>  <section class="comment-content comment"><p>Just want to say what a great blog you got here!<br />
+I&rsquo;ve been around for quite a lot of time, but finally decided to show my appreciation of your work! </p>
+<p>Thumbs up, and keep it going!</p>
+<p>Cheers<br />
+Christian, <a href="http://www.iwatchsouthparkonline.net" rel="nofollow">iwspo.net</a></p>
+</section></div></div></article>          <!-- //#comment-## -->
+        </li><!-- #comment-## -->
+              </ul><!-- .commentlist -->
+            </div><!-- //#comments .comments-area -->
+
+        
+          <hr class="featurette-divider __after_loop">
+        <nav id="nav-below" class="navigation">
+
+              <h3 class="assistive-text">
+                Parcourir les articles              </h3>
+
+              <ul class="pager">
+                                  <li class="previous">
+                    <span class="nav-previous">
+                      <a href="https://www.dsconsultant.net/blog/apple/excel-insertion-colonnes-ou-lignes-impossible" rel="prev"><span class="meta-nav">&larr;</span> Excel, insertion colonnes ou lignes impossible</a>                    </span>
+                  </li>
+                                                  <li class="next">
+                    <span class="nav-next">
+                        <a href="https://www.dsconsultant.net/blog/apple/apple-vend-un-million-dipad" rel="next">Apple vend un million d’iPad&#8230; <span class="meta-nav">&rarr;</span></a>                    </span>
+                  </li>
+                              </ul>
+
+          </nav><!-- //#nav-below .navigation -->
+
+        
+        
+                                   <hr class="featurette-divider tc-mobile-separator">
+                </div><!--.article-container -->
+
+           
+        </div><!--.row -->
+    </div><!-- .container role: main -->
+
+    <div id="tc-push-footer"></div>
+</div><!-- //#main-wrapper -->
+
+  		<!-- FOOTER -->
+  		<footer id="footer" class="">
+  		 		    				 <div class="colophon">
+			 	<div class="container">
+			 		<div class="row-fluid">
+					    <div class="span3 social-block pull-left"><span class="social-links"><a rel="nofollow noopener noreferrer" class="social-icon icon-facebook"  title="Suivez-moi sur Facebook" aria-label="Suivez-moi sur Facebook" href="https://www.facebook.com/dsconsultant.net/"  target="_blank" ><i class="fab fa-facebook"></i></a><a rel="nofollow noopener noreferrer" class="social-icon icon-linkedin"  title="Suivez-moi sur LinkedIn" aria-label="Suivez-moi sur LinkedIn" href="https://www.linkedin.com/in/dominique-schos-5641998?trk=hp-identity-name"  target="_blank" ><i class="fab fa-linkedin"></i></a></span></div><div class="span6 credits"><p>&middot; <span class="tc-copyright-text">&copy; 2020</span> <a href="https://www.dsconsultant.net/blog" title="Mes Notes, Astuces &amp; Conseils informatiques" rel="bookmark">Mes Notes, Astuces &amp; Conseils informatiques</a> &middot; <span class="tc-wp-powered-text">Propulsé par</span> <a class="icon-wordpress" target="_blank" rel="noopener noreferrer" href="https://wordpress.org" title="Propulsé par WordPress"></a> &middot; <span class="tc-credits-text">Réalisé avec the <a class="czr-designer-link" href="https://presscustomizr.com/customizr" title="Thème Customizr">Thème Customizr</a> </span> &middot;</p></div>	      			</div><!-- .row-fluid -->
+	      		</div><!-- .container -->
+	      	</div><!-- .colophon -->
+	    	  		</footer>
+    </div><!-- //#tc-page-wrapper -->
+		<script type='text/javascript' src='https://www.dsconsultant.net/blog/wp-includes/js/comment-reply.min.js?ver=5.3.4'></script>
+<script type='text/javascript' src='https://www.dsconsultant.net/blog/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.dsconsultant.net/blog/wp-content/themes/customizr/assets/front/js/libs/modernizr.min.js?ver=4.1.55'></script>
+<script type='text/javascript' src='https://www.dsconsultant.net/blog/wp-includes/js/wp-embed.min.js?ver=5.3.4'></script>
+<script async="async" type='text/javascript' src='https://www.dsconsultant.net/blog/wp-content/plugins/akismet/_inc/form.js?ver=4.1.3'></script>
+<div id="tc-footer-btt-wrapper" class="tc-btt-wrapper right"><i class="btt-arrow"></i></div>	</body>
+	</html>
