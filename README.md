@@ -17,4 +17,4 @@ Requirements:
 Some references to Sun Type 5 keyboard can be find because this patch has been developped to fix an issue during the port of this project (https://www.gekk.info/articles/solaris26.htm) on a mac with a french keyboard.
 
 2023-04-06:
-  Update to support qemu 8.0.0
+  Update support for qemu 8.0.0
